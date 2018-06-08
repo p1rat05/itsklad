@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class WarehousesSeeder extends Seeder
+class UserGroupsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,10 +11,9 @@ class WarehousesSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Warehouse::class, 2)->create();
-//        DB::table('warehouses')->insert(
-//            ['name' => str_random(10)],
+        factory(App\UserGroup::class, 10)->create();
+//        DB::table('user_groups')->insert(
 //            ['name' => str_random(10)]
-//        );
+//            );
     }
 }

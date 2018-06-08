@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArtGroupsTable extends Migration
+class CreateTrademarksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateArtGroupsTable extends Migration
      */
     public function up()
     {
-        Schema::create('art_groups', function (Blueprint $table) {
+        Schema::create('trademarks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('idParent')->unsigned()->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateArtGroupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('art_groups');
+        Schema::dropIfExists('trademarks');
     }
 }
