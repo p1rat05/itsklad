@@ -26,7 +26,7 @@
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="#">Administration</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -35,13 +35,15 @@
         </form>
     </div>
 </nav>
-<h1>Hello, world!</h1>
-@section('sidebar')
-    This is the master sidebar.
-@show
-
-<div class="container">
-    @yield('content')
+    <div class="container">
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+            <h1>Hello, world!</h1>
+        </div>
+        @section('sidebar')
+            This is the master sidebar.
+        @show
+        @yield('content')
+    </div>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
