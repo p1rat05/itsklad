@@ -10,11 +10,10 @@
 @endsection
 
 @section('content')
-    <p>This is my body content.</p>
+    <p>Warehouse's last events:</p>
     @isset($histories)
     <table class="table">
         <thead style="background-color: #28a745">
-
         <tr>
             <th scope="col">FIO</th>
             <th scope="col">Model</th>
