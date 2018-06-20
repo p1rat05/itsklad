@@ -12,11 +12,12 @@
     <title>Itsklad - @yield('title')</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4a527d;">
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #4a527d;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbar01">
         <a class="navbar-brand" href="#">ItSklad</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
@@ -35,6 +36,7 @@
         </form>
     </div>
 </nav>
+
     <div class="container">
         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
             <h1>Hello, world!</h1>

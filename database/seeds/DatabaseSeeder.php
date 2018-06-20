@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ArtGroupsTableSeeder::class,
             TrademarksTableSeeder::class,
             TransactionHistoriesTableSeeder::class,
+            EmployeeTableSeeder::class,
             ]);
     }
 }
